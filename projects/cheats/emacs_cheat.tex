@@ -1,0 +1,213 @@
+% Created 2023-04-27 Thu 09:31
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Peter Bouman}
+\date{\today}
+\title{}
+\hypersetup{
+ pdfauthor={Peter Bouman},
+ pdftitle={},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 28.1 (Org mode 9.5.2)}, 
+ pdflang={English}}
+\begin{document}
+
+\tableofcontents
+
+\section{Core Emacs}
+\label{sec:org723bed6}
+\subsection{Editing}
+\label{sec:org686d583}
+\subsubsection{Cut C-v}
+\label{sec:org6b1e193}
+\subsubsection{Copy M-w}
+\label{sec:org724575b}
+\subsubsection{Paste C-v}
+\label{sec:org3220b22}
+\subsubsection{Undo C-x u}
+\label{sec:org716fad9}
+\subsubsection{Redo C-M-\_}
+\label{sec:orgc0df443}
+\subsubsection{Select all C-x h}
+\label{sec:org796fc94}
+\subsubsection{Repeat previous command N times: C-x z (where there are N z's)}
+\label{sec:orgdc61457}
+\subsubsection{Transpose:}
+\label{sec:orgd49b216}
+\begin{enumerate}
+\item 2 characters C-t
+\label{sec:orgc6b0ccd}
+\item 2 words M-t
+\label{sec:org3209614}
+\item 2 lines  C-x C-t
+\label{sec:org6ff7817}
+\end{enumerate}
+\subsubsection{Save C-x C-s}
+\label{sec:org059d29c}
+\subsubsection{Save As C-x C-w}
+\label{sec:org4d10ecc}
+
+\subsection{Movement}
+\label{sec:org1cfbd12}
+
+\subsubsection{Start of line C-a}
+\label{sec:org78c226e}
+
+\subsubsection{Set mark C-\_}
+\label{sec:org161e033}
+
+\subsubsection{End of line C-e}
+\label{sec:org7284776}
+
+\subsubsection{Start of buffer M-<}
+\label{sec:org360047e}
+
+\subsubsection{End of buffer M->}
+\label{sec:orge003d0a}
+
+\subsubsection{Start of function M-C-a}
+\label{sec:org44318d7}
+
+\subsubsection{End of function M-C-e}
+\label{sec:org83e9567}
+
+\subsubsection{Forward one word M-f}
+\label{sec:org1e941ce}
+
+\subsubsection{Backwards one word M-b}
+\label{sec:org0180bbd}
+
+\subsubsection{Incremental Search}
+\label{sec:org13f926e}
+
+\subsubsection{Comment/uncomment region M-;}
+\label{sec:org02d9ca9}
+
+\begin{enumerate}
+\item Forward M-f
+\label{sec:org2041f42}
+
+\item Backward M-b
+\label{sec:org05fd88c}
+\end{enumerate}
+
+\subsection{Windows and buffers}
+\label{sec:org7aba90a}
+
+\subsubsection{New window below current C-x 2}
+\label{sec:orgc5f6950}
+
+\subsubsection{New window to right of current C-x 3}
+\label{sec:org3232acb}
+
+\subsubsection{Delete active window C-x 0}
+\label{sec:orgdbcd19d}
+
+\subsubsection{Delete all other windows C-x 1}
+\label{sec:org87dba72}
+
+\subsubsection{Swith to named buffer C-x b}
+\label{sec:orgf4391fc}
+
+\subsubsection{List all buffers C-x C-b}
+\label{sec:org6ae32a1}
+
+\subsubsection{Nest buffer C-x ->}
+\label{sec:org59a2ca5}
+
+\subsubsection{Prev buffer C-x <-}
+\label{sec:org5c96886}
+
+\subsubsection{Widen buffer C-x \}}
+\label{sec:org28efcf9}
+
+\subsubsection{Enlarge vertically C-x \^{}}
+\label{sec:org29d0bd1}
+
+\subsubsection{Narrow buffer C-x \{}
+\label{sec:org8a3cddc}
+
+\section{Dired}
+\label{sec:org23734ae}
+
+\subsection{Start dired  C-x d}
+\label{sec:org1e5b8c1}
+
+\subsection{Mark a file for deletion d}
+\label{sec:orgb35d8aa}
+
+\subsection{Execute deletions x}
+\label{sec:org098c954}
+
+\subsection{Compess a file c}
+\label{sec:org3cdd2fd}
+
+\subsection{Copy a file C}
+\label{sec:orge1e99ef}
+
+\subsection{Rename mrked file R}
+\label{sec:org7d83a30}
+
+\subsection{Touch file T}
+\label{sec:orgf9c3139}
+
+\subsection{Create new directory +}
+\label{sec:org73ca861}
+
+\subsection{Refresh dired view g}
+\label{sec:org4450582}
+
+\subsection{View the current file v}
+\label{sec:org77d4cf9}
+
+\subsection{Visit the marked file f}
+\label{sec:org2a61c42}
+
+\subsection{Visit marked file in another window o}
+\label{sec:orge3c16d8}
+
+
+\section{Git commands}
+\label{sec:org1648d04}
+
+\subsection{to revert to an earlier version of a file in repow/commit SHA1, create a new branch}
+\label{sec:org5c0edba}
+called "tmp". Then do a "git checkout <SHA of older version>". Git will say "HEAD detached".
+To resolve, use "git branch tmp", "git checkout master" and "git merge tmp".
+
+\section{Basic org commands}
+\label{sec:org60b28a8}
+
+\subsection{Export oto PDF C-c C-c l o}
+\label{sec:org9bf375a}
+
+\subsection{Demote M-C- ->}
+\label{sec:org3b10fdb}
+
+\subsection{Promote line M-C- <-}
+\label{sec:orgffd39f5}
+
+\section{Bookmarks}
+\label{sec:org15f4c06}
+
+\subsection{Bookmark specific file C-x r m}
+\label{sec:orgd60b76a}
+
+\subsection{Open bookmarked file C-x r b}
+\label{sec:orga598c4f}
+
+\subsection{List bookmarks C-x r l}
+\label{sec:org2338330}
+\end{document}

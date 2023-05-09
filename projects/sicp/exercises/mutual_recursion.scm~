@@ -1,0 +1,5 @@
+(define (f n)
+  (cond
+   ((= n 0) '())
+   (display "calling g!")
+   (g ( - n 1))))

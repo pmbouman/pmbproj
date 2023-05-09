@@ -1,0 +1,116 @@
+* Core Emacs
+** Editing
+*** Cut C-v
+*** Copy M-w
+*** Paste C-v
+*** Undo C-x u
+*** Redo C-M-_
+*** Select all C-x h
+*** Repeat previous command N times: C-x z (where there are N z's)
+*** Transpose:
+****    2 characters C-t
+****    2 words M-t
+****    2 lines  C-x C-t
+*** Save C-x C-s
+*** Save As C-x C-w
+
+** Movement
+
+*** Start of line C-a
+
+*** Set mark C-_
+
+*** End of line C-e
+
+*** Start of buffer M-<
+
+*** End of buffer M->
+
+*** Start of function M-C-a
+
+*** End of function M-C-e
+
+*** Forward one word M-f
+ 
+*** Backwards one word M-b
+
+*** Incremental Search
+
+*** Comment/uncomment region M-;
+
+***** Forward M-f
+
+***** Backward M-b
+
+** Windows and buffers
+
+*** New window below current C-x 2
+
+*** New window to right of current C-x 3
+
+*** Delete active window C-x 0
+
+*** Delete all other windows C-x 1
+
+*** Swith to named buffer C-x b
+
+*** List all buffers C-x C-b
+
+*** Nest buffer C-x ->
+
+*** Prev buffer C-x <-
+
+*** Widen buffer C-x }
+
+*** Enlarge vertically C-x ^
+
+*** Narrow buffer C-x {
+
+* Dired
+
+** Start dired  C-x d
+
+** Mark a file for deletion d
+
+** Execute deletions x
+
+** Compess a file c
+
+** Copy a file C
+
+** Rename mrked file R
+
+** Touch file T
+
+** Create new directory +
+
+** Refresh dired view g
+
+** View the current file v
+
+** Visit the marked file f
+
+** Visit marked file in another window o
+
+
+* Git commands
+
+** to revert to an earlier version of a file in repow/commit SHA1, create a new branch
+called "tmp". Then do a "git checkout <SHA of older version>". Git will say "HEAD detached".
+To resolve, use "git branch tmp", "git checkout master" and "git merge tmp".
+
+* Basic org commands
+
+** Export oto PDF C-c C-c l o
+
+** Demote M-C- -> 
+
+** Promote line M-C- <-
+
+* Bookmarks
+
+** Bookmark specific file C-x r m
+
+** Open bookmarked file C-x r b
+
+** List bookmarks C-x r l

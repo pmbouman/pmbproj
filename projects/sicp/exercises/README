@@ -1,0 +1,5 @@
+Conventions for exercise file names (PMB, 3/4/23)
+
+Exx.yy.scm: Exercise xx.yy in EOPL
+Sxx.yy.scm: Exercise xx.yy in SICP
+Pxx.yy.scm: Exercise xx.yy in PAIP
